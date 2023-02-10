@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Variáveis */
+:root {
+  --background: #b31b1b;
+  --greenScreen: #a0ffad;
+  --greyPainel: #d1d1d1;
+  --backgroundName: #3f3f3f;
+  --btnSound: #00c03a;
+  --on: #05ff05;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pokedex {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background);
+  border-radius: 82px 49px 29px 54px / 39px 18px 1px 72px;
+  width: 400px;
+  height: 570px;
+  border: solid 4px #000;
+}
+
+.power {
+  position: absolute;
+  margin-left: 340px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--on);
+  border: solid 4px #000;
+  margin-top: 7px;
+}
+
+.container-grey-painel {
+  background-color: var(--greyPainel);
+  width: 310px;
+  height: 280px;
+  padding: 5px;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: solid 4px #000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-grey-painel hr {
+  width: 100px;
+  height: 6px;
+  border-radius: 20px;
+  background-color: #000;
+  margin-bottom: 3px;
+}
+
+.container-green-screen {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--greenScreen);
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 70px;
+  border: solid 4px #000;
+}
+
+#pokemon {
+  width: 120px;
+}
+
+#type {
+  width: 30px;
+}
+
+.container-name {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 350px;
+   background-color: var(--backgroundName);
+   width: 320px;
+   padding: 10px;
+   height: 30px;
+   border-radius: 10px;
+}
+
+.container-name h1 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.container-name img {
+  width: 25px;
+}
+
+.container-buttons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  justify-content: space-between;
+  margin-top: 450px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 30px;
+  background-color: var(--greyPainel);
+  border: none;
+}
+
+#btn-action {
+  width: 80px;
+  background-color: var(--btnSound);
+  border: none;
+  cursor: pointer;
+  border: solid 4px #000;
+}
+
+#prev {
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+#next {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+
